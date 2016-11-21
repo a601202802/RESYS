@@ -1,0 +1,202 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Frontend.master.cs" Inherits="Frontend" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>禾美软件</title>
+    <link href="css2/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js2/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css2/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- 设置网络关键字 -->
+    <%--<meta name="keywords" content="Express News Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />--%>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- for bootstrap working -->
+    <script type="text/javascript" src="js2/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+    <script src="js2/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+	    </script>
+    <script type="text/javascript" src="js2/move-top.js"></script>
+    <script type="text/javascript" src="js2/easing.js"></script>
+    <!--/script-->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- header-section-starts-here -->
+        <div class="header">
+            <div class="header-bottom">
+                <%--<div class="logo text-center">
+                    <a href="index.html">
+                        <img src="images/logo.jpg" alt="" /></a>
+
+                </div>--%>
+                <div class="text-center" style="width:100%;">
+                    <h1>瑞赛思资讯网</h1>
+                    <h3>RESYS NEWS</h3>        
+                </div>
+                <div class="navigation">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="wrap">
+                            <!-- 屏幕缩小后导航栏的图标样式 -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <!--/.navbar-header-->
+
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="Index.aspx">首页</a></li>
+                                    <li><a href="Article_List.aspx">资讯</a></li>
+                                    <li><a href="#">微软开源</a></li>
+                                    <li><a href="#">OpenStack</a></li>
+                                    <li><a href="#">产品介绍</a></li>
+                                    <li><a href="#">相关下载</a></li>
+                                    <%--<div class="clearfix"></div>--%>
+                                </ul>
+                                <div class="search">
+                                    <!-- start search-->
+                                    <div class="search-box">
+                                        <div id="sb-search" class="sb-search">
+                                            <form>
+                                                <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search" />
+                                                <input class="sb-search-submit" type="submit" value="" />
+                                                <span class="sb-icon-search"></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- search-scripts -->
+                                    <script src="js2/classie.js"></script>
+                                    <script src="js2/uisearch.js"></script>
+                                    <script>
+                                        new UISearch(document.getElementById('sb-search'));
+						            </script>
+                                    <!-- //search-scripts -->
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <!--/.navbar-collapse-->
+                    </nav>
+                    <!--/.navbar-->
+                </div>
+
+            </div>
+        </div>
+        <!-- header-section-ends-here -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <!-- footer-section-starts-here -->
+        <div class="footer">
+            <div class="footer-top">
+                <div class="wrap">
+                    <div class="col-md-3 col-xs-6 col-sm-4 footer-grid">
+                        <h4 class="footer-head">关于我们</h4>
+                        <p>我们是一个无比高颜值的团队</p>
+                        <p>我们是一个无比牛逼的团队</p>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-2 footer-grid">
+                        <h4 class="footer-head">目录</h4>
+                        <ul class="cat">
+                            <li><a href="Index.aspx">首页</a></li>
+                            <li><a href="Article_List.aspx">资讯</a></li>
+                            <li><a href="#">微软开源</a></li>
+                            <li><a href="#">OpenStack</a></li>
+                            <li><a href="#">产品介绍</a></li>
+                            <li><a href="#">相关下载</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 footer-grid">
+                        <h4 class="footer-head">联系我们</h4>
+                        <span class="hq">我们的总部</span>
+                        <address>
+                            <ul class="location">
+                                <li><span class="glyphicon glyphicon-map-marker"></span></li>
+                                <li>广东技术师范学院白云校区</li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <ul class="location">
+                                <li><span class="glyphicon glyphicon-earphone"></span></li>
+                                <li>601202802</li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <ul class="location">
+                                <li><span class="glyphicon glyphicon-envelope"></span></li>
+                                <li><a href="#">601202802@qq.com</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="wrap">
+                    <div class="copyrights col-md-6">
+                        <p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                    </div>
+                    <div class="footer-social-icons col-md-6">
+                        <ul>
+                            <li><a class="facebook" href="#"></a></li>
+                            <li><a class="twitter" href="#"></a></li>
+                            <li><a class="flickr" href="#"></a></li>
+                            <li><a class="googleplus" href="#"></a></li>
+                            <li><a class="dribbble" href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-section-ends-here -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                /*
+				var defaults = {
+				wrapID: 'toTop', // fading element id
+				wrapHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+                $().UItoTop({ easingType: 'easeOutQuart' });
+            });
+        </script>
+        <a href="#to-top" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+        <!---->
+
+    </form>
+</body>
+</html>

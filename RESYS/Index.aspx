@@ -22,7 +22,6 @@
             <script type="text/javascript" src="js2/jquery.marquee.min.js"></script>
             <script>
                 $('.marquee').marquee({ pauseOnHover: true });
-                //@ sourceURL=pen.js
             </script>
         </div>
     </div>

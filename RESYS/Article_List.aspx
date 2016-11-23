@@ -117,7 +117,7 @@
                         <asp:View ID="view6" runat="server">
                         </asp:View>
                     </asp:MultiView>
-                    <div class="side-bar-article text-center">
+                    <div class="side-bar-article text-center visible-lg">
                         <a href="single.html">
                             <img src="images/h/h1.jpg" alt="" /></a>
                         <div class="side-bar-article-title">

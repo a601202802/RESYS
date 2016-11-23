@@ -1853,10 +1853,10 @@ a.span_link1 {
   text-decoration: none;
   position: fixed;
   bottom: 14px;
-  right: 3%;
+  right: 2%;
   overflow: hidden;
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   border: none;
   text-indent: 100%;
   background: url("../images/to-top1.png") no-repeat 0px 0px;
@@ -2272,6 +2272,36 @@ address a:hover {
 	margin:1em 0;
 }
 
+
+/*-- about sidebar-right --*/
+/*”“≤‡±ﬂ¿∏*/
+
+.list-1 {
+    padding:10px 0 20px 0;
+}
+.list-1 li {
+	display:block;
+	padding:4px 0 14px 16px;
+	/*border-top:1px solid #323232;*/
+	background:url(../images/list-1-marker.gif) no-repeat 14px 10px;
+}
+.list-1 li:first-child {
+    padding:10px 0 12px 16px; 
+    border:none;
+    background:url(../images/list-1-marker.gif) no-repeat 0 5px;
+}
+.list-1 li a {
+    color:#717171;
+    font-size:14px;
+    line-height:20px;
+    padding:5px 0 6px;
+    text-decoration:none;
+}
+.list-1 li a:hover {
+    color:#fff;
+}
+
+/*-- //about sidebar-right End --*/
 
 /*-- responsive-design starts-here --*/
 

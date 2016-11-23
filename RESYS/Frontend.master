@@ -5,11 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>禾美软件</title>
+    <title>锐赛思</title>
     <link href="css2/bootstrap.css" rel='stylesheet' type='text/css' />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js2/jquery.min.js"></script>
-    <!-- Custom Theme files -->
+    <!-- Custom Theme files 自定义主题文件 -->
     <link href="css2/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- Custom Theme files -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,6 +17,7 @@
     <!-- 设置网络关键字 -->
     <%--<meta name="keywords" content="Express News Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
     Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />--%>
+    <!-- 页面加载的时候添加一个定时器，0秒之后执行hideURLbar函数。hideURLbar函数将页面滚动至坐标（0,1） -->
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- for bootstrap working -->
     <script type="text/javascript" src="js2/bootstrap.js"></script>
@@ -58,7 +59,7 @@
 
                 </div>--%>
                 <div class="text-center" style="width:100%;">
-                    <h1>瑞赛思资讯网</h1>
+                    <h1>瑞赛思-开源的力量</h1>
                     <h3>RESYS NEWS</h3>        
                 </div>
                 <div class="navigation">

@@ -8,11 +8,12 @@
         <div class="wrap">
             <ol class="breadcrumb">
                 <li><a href="#">首页</a></li>
+                <li><a href="#">资讯</a></li>
                 <li class="active">文章名字</li>
             </ol>
             <div class="single-page">
-                <div class="col-md-2 share_grid">
-                    <h3>SHARE</h3>
+                <%--<div class="col-md-2 share_grid">
+                    <h3>分享文章</h3>
                     <ul>
                         <li>
                             <a href="#">
@@ -64,8 +65,8 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-                <div class="col-md-6 content-left single-post">
+                </div>--%>
+                <div class="col-md-9 content-left single-post">
                     <div class="blog-posts">
                         <div class="text-center">
                             <h3 class="post">一个人的心灵要美丽</h3>
@@ -153,6 +154,61 @@
                             </div>
                             <div class="clearfix"></div>
                         </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 side-bar">
+                    <%--<div class="first_half">
+                        <div class="categories">
+                            <header>
+                                <h3 class="side-title-head">本周最热文章</h3>
+                            </header>
+                            <ul>
+                                <li><a href="#">移动直播技术的极限优化与高效研发</a></li>
+                                <li><a href="#">redis 主从配置</a></li>
+                                <li><a href="#">Zigbee抓包分析——介绍</a></li>
+                                <li><a href="#">移动直播技术的极限优化与高效研发</a></li>
+                                <li><a href="#">redis 主从配置</a></li>
+                                <li><a href="#">Zigbee抓包分析——介绍</a></li>
+                            </ul>
+                        </div>
+                    </div>--%>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            最热点击文章
+                        </div>
+                        <div>
+                            <ul class="list-1">
+                                <li><a href="#">123456789</a></li>
+                                <li><a href="#">123456789</a></li>
+                                <li><a href="#">123456789</a></li>
+                                <li><a href="#">123456789</a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            最新资讯
+                        </div>
+                        <ul class="list-1">
+                            <li><a href="#">123456789</a></li>
+                            <li><a href="#">123456789</a></li>
+                            <li><a href="#">123456789</a></li>
+                            <li><a href="#">123456789</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            最热技术
+                        </div>
+                        <ul class="list-1">
+                            <li><a href="#">123456789</a></li>
+                            <li><a href="#">123456789</a></li>
+                            <li><a href="#">123456789</a></li>
+                            <li><a href="#">123456789</a></li>
+                        </ul>
                     </div>
 
                 </div>

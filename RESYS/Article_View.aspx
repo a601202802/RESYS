@@ -12,60 +12,6 @@
                 <li class="active">文章名字</li>
             </ol>
             <div class="single-page">
-                <%--<div class="col-md-2 share_grid">
-                    <h3>分享文章</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="facebook"></i>
-                                <div class="views">
-                                    <span>SHARE</span>
-                                    <label>180</label>
-                                </div>
-                                <div class="clearfix"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="twitter"></i>
-                                <div class="views">
-                                    <span>TWEET</span>
-                                    <label>355</label>
-                                </div>
-                                <div class="clearfix"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="linkedin"></i>
-                                <div class="views">
-                                    <span>SHARES</span>
-                                    <label>28</label>
-                                </div>
-                                <div class="clearfix"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="pinterest"></i>
-                                <div class="views">
-                                    <span>PIN</span>
-                                    <label>16</label>
-                                </div>
-                                <div class="clearfix"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="email"></i>
-                                <div class="views">
-                                    <span>Email</span>
-                                </div>
-                                <div class="clearfix"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>--%>
                 <div class="col-md-9 content-left single-post">
                     <div class="blog-posts">
                         <div class="text-center">
@@ -120,6 +66,10 @@
                                         </a>
                                         <h5><a href="#">Username</a></h5>
                                     </div>
+
+
+
+
                                     <div class="media-body response-text-right">
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
@@ -158,24 +108,9 @@
 
                 </div>
                 <div class="col-md-3 side-bar">
-                    <%--<div class="first_half">
-                        <div class="categories">
-                            <header>
-                                <h3 class="side-title-head">本周最热文章</h3>
-                            </header>
-                            <ul>
-                                <li><a href="#">移动直播技术的极限优化与高效研发</a></li>
-                                <li><a href="#">redis 主从配置</a></li>
-                                <li><a href="#">Zigbee抓包分析——介绍</a></li>
-                                <li><a href="#">移动直播技术的极限优化与高效研发</a></li>
-                                <li><a href="#">redis 主从配置</a></li>
-                                <li><a href="#">Zigbee抓包分析——介绍</a></li>
-                            </ul>
-                        </div>
-                    </div>--%>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            最热点击文章
+                            <P>最热点击文章<span style="float:right"><a href="#">MORE+</a></span></P>
                         </div>
                         <div>
                             <ul class="list-1">
@@ -189,7 +124,7 @@
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            最新资讯
+                            <P>最新资讯<span style="float:right"><a href="#">MORE+</a></span></P>
                         </div>
                         <ul class="list-1">
                             <li><a href="#">123456789</a></li>
@@ -201,7 +136,7 @@
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            最热技术
+                            <P>最热技术<span style="float:right"><a href="#">MORE+</a></span></P>
                         </div>
                         <ul class="list-1">
                             <li><a href="#">123456789</a></li>

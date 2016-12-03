@@ -88,24 +88,24 @@
                                     <asp:Image ID="logo" runat="server" ImageUrl="~/images/RESYS.png" width="200px"/>
                                 </div>
                                 <div class="menu">
-                                    <ul class="nav navbar-nav">
+                                <ul class="nav navbar-nav">
                                         <li class="nav-item1" role=""><a href="Index.aspx">首页</a></li>
                                         <li class="nav-item1"><a href="Article_List.aspx">资讯</a></li>
                                         <li class="nav-item2"><a href="#">微软开源</a></li>
                                         <li class="nav-item2"><a href="#">OpenStack</a></li>
                                         <li class="nav-item2"><a href="#">产品介绍</a></li>
                                         <li class="nav-item2"><a href="#">相关下载</a></li>
-                                        <%--<div class="clearfix"></div>--%>
-                                    </ul>
+                                    <%--<div class="clearfix"></div>--%>
+                                </ul>
                                 </div>
                                 <div class="search">
                                     <!-- start search-->
                                     <div class="search-box">
                                         <div id="sb-search" class="sb-search">
                                             <form>
-                                                <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search" />                  
+                                                <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search" />
                                                 <input class="sb-search-submit" type="submit" value="" />
-                                                <span class="sb-icon-search"></span> 
+                                                <span class="sb-icon-search"></span>
                                             </form>
                                         </div>
                                     </div>
@@ -146,7 +146,7 @@
                             <li><a href="Index.aspx">首页</a></li>
                             <li><a href="Article_List.aspx">资讯</a></li>
                             <li><a href="#">微软开源</a></li>
-                            <li><a href="#">OpenStack</a></li>
+                            <li><a href="OpenStack.aspx">OpenStack</a></li>
                             <li><a href="#">产品介绍</a></li>
                             <li><a href="#">相关下载</a></li>
                         </ul>
@@ -194,7 +194,7 @@
                     </div> -->
                     <div class="clearfix"></div>
                 </div>
-        </div>
+            </div>
         <!-- footer-section-ends-here -->
         <script type="text/javascript">
             $(document).ready(function () {

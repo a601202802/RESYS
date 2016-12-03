@@ -70,6 +70,9 @@ label{
 .logo {
     margin:-5px 100px;
 }
+.logo img {
+    width:200px;
+}
 .menu {
     margin:-67px 350px;
     width:800px;
@@ -217,10 +220,10 @@ label{
 	color:#ee5656!important;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #C81522;
+	background-color: #337AB7;
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background-color:#C81522;
+	background-color: #337AB7;
 }
 .navbar-toggle {
 	position: relative;
@@ -1905,7 +1908,10 @@ a.span_link1 {
 /*-- footer --*/
 .footer-top {
     background-color:#EDEEF1;
-    padding: 4em 0;
+    padding: 3em 0;
+}
+.footer-top div {
+    margin-left:25px;
 }
 a.flogo img {
     width: 50%;
@@ -2000,7 +2006,7 @@ ul.location {
 	color:white;
     font-size:14px;
     line-height:45px;
-    text-align:center;
+    margin-left:38%;
     font-weight:bold;
 }
 .footer-social-icons ul {
@@ -2009,15 +2015,6 @@ ul.location {
 .footer-social-icons {
 	float:right;
     margin-right:35px;
-}
-.copyrights p {
-    color:white;
-    font-size: 0.9em;
-	margin-top: 0.8em;
-}
-.copyrights p a {
-	color: white;
-	margin-left:2px;
 }
 .footer-social-icons ul li {
 	display:inline-block;
@@ -2345,6 +2342,24 @@ address a:hover {
 /*-- responsive-design starts-here --*/
 
 @media screen and (max-width: 1920px) {
+    .logo {
+        margin-left:4%;
+    }
+    .login ul {
+        margin-right:38%;
+    }
+    .sb-search {
+        margin-right:30%;
+    }
+    .footer-top {
+        padding: 3em 8em;
+    }
+    .footer-top div {
+        margin-left: -30px;
+    }
+    .Copyright {
+    	margin-left:26%;
+    }
 	a.title {
 		font-size: 2.4em;
 	}
@@ -2355,9 +2370,6 @@ address a:hover {
 	.marquee {
 		width: 80%;
 		margin-left: 15%;
-	}
-	.sb-search {
-		right: 110px;
 	}	
 	.tags p {
 		font-size: 1.3em;
@@ -2374,18 +2386,45 @@ address a:hover {
 	}
 }
 @media screen and (max-width: 1680px) {
+    .login ul {
+        margin-right:28%;
+    }
+    .footer-top {
+        padding: 3em 6em;
+    }
+    .footer-top div {
+        margin-left: -20px;
+    }
+    .sb-search {
+        margin-right:21%;
+    }
+    .Copyright {
+    	margin-left:29%;
+    }
 	.marquee {
 		width: 75%;
 		margin-left: 18%;
 	}
 }
 @media screen and (max-width: 1440px) {
+    .login ul {
+        margin-right:17%;
+    }
+    .sb-search {
+        margin-right:8%;
+    }
+    .Copyright {
+    	margin-left:33%;
+    }
+    .footer-top {
+        padding: 3em 3em;
+    }
+    .footer-top div {
+        margin-left: 5px;
+    }
 	.marquee {
 		width: 70%;
 		margin-left: 20%;
-	}
-	.sb-search {
-		right: 71px;
 	}
 	a.title {
 		font-size: 1.9em;
@@ -2412,6 +2451,27 @@ address a:hover {
 	}
 }
 @media screen and (max-width: 1366px) {
+    .navbar-nav {
+	    margin-left:-20px;
+    }
+    .sb-search {
+        margin-right:2%;
+    }
+    .logo {
+        margin-left:3%;
+    }
+    .login ul {
+        margin-right:12%;
+    }
+    .footer-top {
+        padding: 3em 2em;
+    }
+    .footer-top div {
+        margin-left: 10px;
+    }
+    .Copyright {
+    	margin-left:36%;
+    }
 	a.power {
 		font-size: 1.3em;
 	}
@@ -2433,12 +2493,6 @@ address a:hover {
 	.fashion-right h3 a, .fashion-right h3, .fashion-left h3 a, .fashion-left h3 {
 		font-size: 1.4em;
 	}
-	.footer-top {
-		padding: 4em 0 3em 0;
-	}
-	.sb-search {
-		right: 33px;
-	}
 	.contact-top h3 ,.contact-top_right h3 {
 		font-size: 2em;
 	}
@@ -2451,6 +2505,12 @@ address a:hover {
 	}
 }
 @media screen and (max-width: 1280px) {
+    .navbar-nav {
+        margin-left: -65px;
+    }
+    .sb-search {
+        margin-right:6%;
+    }
 	h3.title-head {
 		font-size: 2.3em;
 	}
@@ -2518,22 +2578,70 @@ address a:hover {
 	ul.categories li a {
 		font-size: 1.05em;
 	}
+    .sb-search {
+        margin-right:4%;
+    }
+    .sb-search {
+        margin-right:0;
+    }
+    .login ul {
+        margin-right:8%;
+    }
+    .Copyright {
+    	margin-left:35%;
+    }
+    .footer-top {
+        padding: 3em 2em;
+    }
+    .footer-top div {
+        margin-left: 5px;
+    }
 }
 @media screen and (max-width: 1080px) {
-	.logo a img {
-		width: 25%;
+    .login {
+        margin-top:-2%; 
+    }
+    .login ul {
+        margin:0 6%;
+    }
+    .logo {
+        margin-left:2%;
+    }
+    .logo img {
+        width: 190px;
+    }
+    .navbar-nav {
+        margin-left:-130px;
+        margin-top:-8px;
+    }
+    .nav-item1 {
+        width:70px;
+        height:50px;
+    }
+    .nav-item2 {
+        width:100px;
+        height:50px;
+    }
+    .menu ul {
+        margin-top:0px;
+    }
+    .sb-search {
+		margin-right:2%;
 	}
-	.navbar-nav > li {
-		margin: 12px 28px 0 0;
-	}
+    .Copyright {
+        margin-left:33%;
+    }
+    .footer-top {
+        padding: 3em 2em;
+    }
+    .footer-top div {
+        margin-left: 15px;
+    }
 	.header-bottom {
 		padding: 1.7em 0 0.4em 0;
 	}
 	.navbar-default .navbar-nav>li>a {
 		font-size: 1.25em;
-	}
-	.sb-search {
-		right: 25px;
 	}
 	.breaking_news {
 		padding: 16px 30px;
@@ -2673,12 +2781,13 @@ address a:hover {
 	}
 }
 @media screen and (max-width: 1024px) {
-	.logo a img {
-		width: 25%;
-	}
-	.navbar-nav > li {
-		margin: 12px 28px 0 0;
-	}
+    .logo {
+        width:180px;
+        margin-top: -10px;
+    }
+    .menu ul {
+        margin-top:0px;
+    }
 	.header-bottom {
 		padding: 1.7em 0 0.4em 0;
 	}
@@ -2688,6 +2797,9 @@ address a:hover {
 	.sb-search {
 		right: 25px;
 	}
+    .Copyright {
+        margin-left:32%;
+    }
 	.breaking_news {
 		padding: 16px 30px;
 	}
@@ -2829,12 +2941,12 @@ address a:hover {
 	}
 }
 @media screen and (max-width: 991px) {
-	.wrap {
-		width: 85%;
+	.sb-search {
+		margin-right:0%;
 	}
-	.col-md-4.footer-grid {
-		padding: 0 15px;
-	}
+    .footer-top {
+        font-size: 1.2em;
+    }
 	.marquee {
 		width: 70%;
 		margin-left: 26%;
@@ -2847,9 +2959,6 @@ address a:hover {
 	}
 	h4.footer-head {
 		margin-bottom: 0.7em;
-	}	
-	.col-md-3.col-xs-12.footer-grid {
-		margin-top: 2em;
 	}
 	a.title {
 		font-size: 1.7em;
@@ -2903,6 +3012,9 @@ address a:hover {
 	.wrap {
 		width: 95%;
 	}
+    .sb-search {
+        opacity:0;
+    }
 	.sb-search.sb-search-open, .no-js .sb-search {
 		width: 32%;
 	}
@@ -2917,9 +3029,25 @@ address a:hover {
 	.wrap {
 		width: 95%;
 	}
-	.logo a img {
-		width: 28%;
-	}
+    .logo img{
+        width:180px;
+    }
+    .logo {
+        margin-top:-10px;
+        margin-left:-5px;
+    }
+    .menu ul {
+        margin-top:-10px;
+        margin-left:-150px;
+    }
+    .nav-item1 {
+        width:60px;
+        height:50px;
+    }
+    .nav-item2 {
+        width:77px;
+        height:50px;
+    }
 	.move-text {
 		margin-bottom: 1.4em;
 	}
@@ -2957,15 +3085,6 @@ address a:hover {
 	.main-body {
 		padding: 0px 0 4em 0;
 	}
-	.col-md-3.col-xs-12.footer-grid {
-		margin-top: 3em;
-	}
-	.col-md-2.col-xs-6.col-sm-2.footer-grid {
-		width: 20%;
-	}
-	.col-md-4.col-xs-6.col-sm-6.footer-grid {
-		width: 46%;
-	}
 	h2.head {
 		font-size: 2.1em;
 	}
@@ -2980,6 +3099,24 @@ address a:hover {
 	}
 }
 @media screen and (max-width: 768px) {
+    .logo {
+        margin-left:-5px;
+    }
+    .menu ul {
+        margin-left:-165px;
+    }
+    .nav-item1 {
+        width:50px;
+        height:50px;
+    }
+    .nav-item2 {
+        width:80px;
+        height:50px;
+    }
+    .footer-top div {
+        margin-left:20px;
+        margin-top:5px;
+    }
 	.dropdown-menu.columns-2 {
 		min-width: 260px;
 	}
@@ -2995,18 +3132,35 @@ address a:hover {
 	.share_grid {
 		padding-right: 5px;
 	}
-	.footer-top {
-		padding: 3em 0 2em 0;
-	}
+	
 }
 @media screen and (max-width: 720px) {
+    .logo img{
+        width:150px;
+    }
+    .logo {
+        margin-left:-50%;
+    }
+    .login {
+        height:50px;
+    }
+    .login ul {
+        margin:0 20%;
+    }
+    .footer-top div {
+        margin-left:15px;
+        margin-top:15px;
+    }
 	.col-md-2.col-xs-6.col-sm-2.footer-grid {
 		width: 48%;
+        margin-top:2em;
 	}
-	.col-md-4.col-xs-6.col-sm-6.footer-grid {
-		width: 60%;
-		margin-top: 2em;
+    .col-md-3 col-xs-6  col-sm-4 footer-grid {
+		width: 48%;
 	}
+    .Copyright {
+        margin-left:25%;
+    }
 	ul.location li:nth-child(2) {
 		width: 94%;
 	}

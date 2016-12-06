@@ -13,7 +13,7 @@
     <div class="row" style="background-color:#F5F5F5;">
         <div class="main-body">
             <div class="wrap">
-                <div class="col-md-6 content-left col-md-offset-1" style="background-color:#ffffff;">
+                <div class="col-lg-6 content-left col-md-offset-1" style="background-color:#ffffff;">
                     <%--<asp:Button ID="Button1" runat="server" Text="全部资讯" CssClass="btn btn-default" />
                 <asp:Button ID="Button2" runat="server" Text="综合资讯" CssClass="btn btn-default" />
                 <asp:Button ID="Button3" runat="server" Text="软件更新资讯" CssClass="btn btn-default" />--%>
@@ -69,7 +69,7 @@
                     </asp:MultiView>
                 </div>
 
-                <div class="col-md-4 side-bar col-md-offset-1" style="background-color:#ffffff;">
+                <div class="col-md-3 side-bar col-md-offset-1" style="background-color:#ffffff;">
                     <asp:LinkButton ID="LinkButton4" runat="server" CssClass="newitem">热门综合资讯</asp:LinkButton>
                     <asp:LinkButton ID="LinkButton5" runat="server" CssClass="newitem">软件更新</asp:LinkButton>
                     <asp:MultiView ID="MultiView2" runat="server" ActiveViewIndex="0">
@@ -126,6 +126,7 @@
                         <div class="clearfix"></div>
                     </div>
                 </div>
+                <div class="col-md-1"></div>
             </div>
         </div>
         <div class="clearfix"></div>

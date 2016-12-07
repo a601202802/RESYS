@@ -43,16 +43,16 @@ label{
     width:90%;
 }
 .login {
-    background-color:white;
-    width:100%;
-    height:45px;
-    font-size:14px;
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    font-size: 1.17em;
 }
 .login ul {
-    margin-right:150px;
     display:inline-block;
     padding:10px 0;
     float:right;
+    margin-right: 10%;
 }
 .login ul li {
     margin: 0 auto;
@@ -68,13 +68,12 @@ label{
 .login ul li a:hover {
     background-color:#d9d9d9;
 }
-.logo {
-    margin-left: 80px;
-    margin-top: 0px;
-    margin-bottom:-5px;
+.navbar-brand img {
+    width: 25%;  
 }
-.logo img {
-    width:200px;
+.navbar-brand {
+    margin-left: 4%;
+    margin-top: -0.8%;
 }
 .header-top {
     background-color: #000;
@@ -121,13 +120,11 @@ label{
 .navigation {
     margin-top: 15px;
 }
-.menu {
-    margin-left: 250px;
-    margin-top:-65px;
-}
-.navbar-nav {
-	float: left;
-	padding:0 75px;
+.navbar-left  {
+    font-size: 1.3em;
+    margin-left: 20%;
+    margin-top: 0.5%;
+    margin-right: 8%;
 }
 .caret {
 	margin-left: 3px;
@@ -188,25 +185,25 @@ label{
 	text-transform: uppercase;
 }
 .navbar-default .navbar-nav>li>a {
-	color:#337ab7;
-	font-size:16px;
-    display:block;
-    text-align:center;
-    line-height:40px;
+	color: #337ab7;
+	font-size: 1.17em;
+    display: block;
+    text-align: center;
+    line-height: 40px;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #1e496c;
     background-color: #eee;
 }
 .navbar-nav > li {
-	margin: 0 auto;
+	margin-left: 20px;
 }
 .nav-item1 {
-    width:60px;
+    width: 70px;
     height:60px;
 }
 .nav-item2 {
-    width:100px;
+    width:120px;
     height:60px;
 }
 .navbar-nav>li>a {
@@ -217,35 +214,65 @@ label{
     background-color:#337ab7;
     border-radius:5px;
 }
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
-	color: #000;
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #337AB7;
 }
 .navbar-default .navbar-brand span{
 	color:#ee5656!important;
 }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #337AB7;
-}
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #337AB7;
-}
 .navbar-toggle {
 	position: relative;
 	float: right;
-	margin-right: 0;
 	padding: 9px 10px;
-	margin-top: 0px;
-	margin-bottom: 8px;
-	background-color: #F9F9F9!important;
+	margin-top: 10px;
+    margin-right: 15px;
+	background-color: transparent;
 	background-image: none;
 	border: 1px solid transparent;
 	border-radius: 4px;
+    /*
 	-ms-border-radius: 4px;
 	-o-border-radius: 4px;
-	-webkit-border-radius: 4px;
+	-webkit-border-radius: 4px;*/
+}
+.navbar-toggle:focus {
+    outline: none;
 }
 .navbar-default .navbar-toggle {
 	border-color: #84754E;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top:4px;
+}
+.collapse {
+    display: none;
+}
+.collapse.in {
+    display: block;
+}
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display:none;
+    }
+    .navbar-collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow:visible!important;
+    }
+    .navbar-collapse.in {
+        overflow-y: visible;
+    }
+    .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 .dropdown-menu .divider {
 	height: 0;
@@ -309,26 +336,33 @@ label{
 	}
 }
 /*-- search-starts --*/
+.search {
+    margin-left: 80%;
+    margin-top: -4.2%;
+}
 .navbar-form {
     padding:10px 15px;
     margin-top: 8px;
-    margin-right:-15px;
-    margin-bottom:8px;
+    margin-right: -15px;
+    margin-bottom: 8px;
     margin-left:-15px;
     border-top:1px solid transparent;
     border-bottom:1px solid transparent;
     -webkit-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 1), 0 1px 0 rgba(255, 255, 255, 1);
 }
 .form-control {
-    width:180px;
-    height:30px;
-    margin-top:10px;
+    width: 180px;
+    height: 40px;
 }
 .btn-default {
-    border:none;
-    margin-left:140px;
-    margin-top:-81px;
-    height:28px;
+    background-color: #F9F9F9;
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: #337AB7;
+    font-size: 1.3em;
+    margin-left: 63%;
+    margin-top: -31%;
 }
 @media(min-width: 768px) {
     .navbar-form .form-group {
@@ -359,14 +393,7 @@ label{
     .navbar-form .has-feedback .form-control-feedback {
         top: 0;
     }
-}
-@media(max-width:767px) {
-    .navbar-form .form-group {
-        margin-bottom: 5px;
-    }
-}
-@media(min-width: 768px) {
-    .navbar-form {
+     .navbar-form {
         width:auto;
         padding-top:0;
         padding-bottom: 0;
@@ -378,6 +405,11 @@ label{
     }
     .navbar-form.navbar-right:last-child {
         margin-right: -15px;
+    }
+}
+@media(max-width:767px) {
+    .navbar-form .form-group {
+        margin-bottom: 5px;
     }
 }
 
@@ -1906,7 +1938,7 @@ a.span_link1 {
     padding: 3em 0;
 }
 .footer-top div {
-    margin-left:25px;
+    margin-left: 1%;
 }
 a.flogo img {
     width: 50%;
@@ -2434,38 +2466,13 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 .caption1 a:hover {
     text-decoration:none;
 }
+/* product-list starts */
 
 /*-- //about sidebar-right End --*/
 
 /*-- responsive-design starts-here --*/
 
 @media screen and (max-width: 1920px) {
-    .logo {
-        margin-left: 3.5%;
-    }
-    .login ul {
-        margin-right:30%;
-        margin-top:0;
-    }
-    .menu {
-        margin-left: 11.5%;
-        margin-top: -3.2%;
-    }
-    .navbar-nav {
-	    padding:0 3.7%;
-    }
-    .form-control {
-        margin-top:0.35%;
-    }
-    .footer-top {
-        padding: 2% 8%;
-    }
-    .footer-top div {
-        margin-left: -4%;
-    }
-    .Copyright {
-    	margin-left: 20%;
-    }
 	a.title {
 		font-size: 2em;
 	}
@@ -2492,50 +2499,12 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	}
 }
 @media screen and (max-width: 1680px) {
-    .logo {
-        margin-left: 3.5%;
-    }
-    .login ul {
-        margin-right: 38%;
-    }
-    .menu {
-        margin-left: 13%;
-        margin-top: -3.8%;
-    }
-    .navbar-nav {
-	    padding:0 4.5%;
-    }
-    .Copyright {
-    	margin-left: 22%;
-    }
 	.marquee {
 		width: 75%;
 		margin-left: 18%;
 	}
 }
 @media screen and (max-width: 1440px) {
-    .login ul {
-        margin-right: 28%;
-    }
-    .menu {
-        margin-left: 15%;
-        margin-top: -4.2%;
-    }
-    .navbar-nav {
-	    padding:0 5.5%;
-    }
-    .form-control {
-        margin-top:0.35%;
-    }
-    .footer-top {
-        padding: 2% 5%;
-    }
-    .footer-top div {
-        margin-left: -2%;
-    }
-    .Copyright {
-    	margin-left: 25%;
-    }
 	.marquee {
 		width: 70%;
 		margin-left: 20%;
@@ -2574,9 +2543,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	.move-text {
 		margin-bottom: 2em;
 	}
-	.navbar-default .navbar-nav>li>a {
-		font-size: 1.3em;
-	}
 	a.breaking {
 		font-size: 0.95em;
 	}
@@ -2595,27 +2561,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	}
 }
 @media screen and (max-width: 1280px) {
-    .login ul {
-        margin-right: 19%;
-    }
-    .menu {
-        margin-top: -5.2%;
-    }
-    .navbar-nav {
-	    padding:0 7%;
-    }
-    .form-control {
-        margin-top:0.35%;
-    }
-    .footer-top {
-        padding: 3% 2%;
-    }
-    .footer-top div {
-        margin-left: 0;
-    }
-    .Copyright {
-    	margin-left: 29%;
-    }
 	h3.title-head {
 		font-size: 2.3em;
 	}
@@ -2683,65 +2628,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	ul.categories li a {
 		font-size: 1.05em;
 	}
-    .sb-search {
-        margin-right:4%;
-    }
-    .sb-search {
-        margin-right:0;
-    }
-    .login ul {
-        margin-right:8%;
-    }
-    .Copyright {
-    	margin-left:35%;
-    }
-    .footer-top {
-        padding: 3em 2em;
-    }
-    .footer-top div {
-        margin-left: 5px;
-    }
 }
 @media screen and (max-width: 1080px) {
-    .login {
-        margin-top:-2%; 
-    }
-    .login ul {
-        margin:0 6%;
-    }
-    .logo {
-        margin-left:2%;
-    }
-    .logo img {
-        width: 190px;
-    }
-    .navbar-nav {
-        margin-left:-130px;
-        margin-top:-8px;
-    }
-    .nav-item1 {
-        width:70px;
-        height:50px;
-    }
-    .nav-item2 {
-        width:100px;
-        height:50px;
-    }
-    .menu ul {
-        margin-top:0px;
-    }
-    .sb-search {
-		margin-right:2%;
-	}
-    .Copyright {
-        margin-left:33%;
-    }
-    .footer-top {
-        padding: 3em 2em;
-    }
-    .footer-top div {
-        margin-left: 15px;
-    }
 	.header-bottom {
 		padding: 1.7em 0 0.4em 0;
 	}
@@ -2886,25 +2774,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	}
 }
 @media screen and (max-width: 1024px) {
-    .logo {
-        width:180px;
-        margin-top: -10px;
-    }
-    .menu ul {
-        margin-top:0px;
-    }
-	.header-bottom {
-		padding: 1.7em 0 0.4em 0;
-	}
-	.navbar-default .navbar-nav>li>a {
-		font-size: 1.25em;
-	}
-	.sb-search {
-		right: 25px;
-	}
-    .Copyright {
-        margin-left:32%;
-    }
 	.breaking_news {
 		padding: 16px 30px;
 	}
@@ -3046,12 +2915,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	}
 }
 @media screen and (max-width: 991px) {
-	.sb-search {
-		margin-right:0%;
-	}
-    .footer-top {
-        font-size: 1.2em;
-    }
 	.marquee {
 		width: 70%;
 		margin-left: 26%;
@@ -3117,15 +2980,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	.wrap {
 		width: 95%;
 	}
-    .sb-search {
-        opacity:0;
-    }
-	.sb-search.sb-search-open, .no-js .sb-search {
-		width: 32%;
-	}
-	.sb-search {
-		right: 22px;
-	}
 	.dropdown-menu.columns-2 {
 		min-width: 335px;
 	}
@@ -3134,25 +2988,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	.wrap {
 		width: 95%;
 	}
-    .logo img{
-        width:180px;
-    }
-    .logo {
-        margin-top:-10px;
-        margin-left:-5px;
-    }
-    .menu ul {
-        margin-top:-10px;
-        margin-left:-150px;
-    }
-    .nav-item1 {
-        width:60px;
-        height:50px;
-    }
-    .nav-item2 {
-        width:77px;
-        height:50px;
-    }
 	.move-text {
 		margin-bottom: 1.4em;
 	}
@@ -3204,23 +3039,12 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	}
 }
 @media screen and (max-width: 768px) {
-    .logo {
-        margin-left:-5px;
+    .login {
+        margin-right: 2%;
+        margin-top: -3%;
     }
-    .menu ul {
-        margin-left:-165px;
-    }
-    .nav-item1 {
-        width:50px;
-        height:50px;
-    }
-    .nav-item2 {
-        width:80px;
-        height:50px;
-    }
-    .footer-top div {
-        margin-left:20px;
-        margin-top:5px;
+    .login ul li{
+        float:left;
     }
 	.dropdown-menu.columns-2 {
 		min-width: 260px;
@@ -3240,31 +3064,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	
 }
 @media screen and (max-width: 720px) {
-    .logo img{
-        width:150px;
-    }
-    .logo {
-        margin-left:-50%;
-    }
-    .login {
-        height:50px;
-    }
-    .login ul {
-        margin:0 20%;
-    }
-    .footer-top div {
-        margin-left:15px;
-        margin-top:15px;
-    }
-	.col-md-2.col-xs-6.col-sm-2.footer-grid {
-		width: 48%;
-        margin-top:2em;
-	}
-    .col-md-3 col-xs-6  col-sm-4 footer-grid {
-		width: 48%;
-	}
-    .Copyright {
-        margin-left:25%;
+    .form-control {
+        display:none;
     }
 	ul.location li:nth-child(2) {
 		width: 94%;
@@ -3304,14 +3105,14 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	}
 }
 @media screen and (max-width: 640px) {
+    .form-group {
+        display:none;
+    }
+    .navbar-toggle {
+
+    }
 	.top-menu ul li a,.num p {
 		font-size: 0.9em;
-	}
-	.logo a img {
-		width: 32%;
-	}
-	.navbar-toggle {
-		padding: 7px 9px;
 	}
 	.breaking_news h2 {
 		font-size: 1.2em;
@@ -3824,15 +3625,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 	}
 	.logo a img {
 		width: 52%;
-	}
-	.navbar-toggle {
-		padding: 7px 7px;
-	}
-	.sb-search.sb-search-open, .no-js .sb-search {
-		width: 90%;
-	}
-	.sb-search {
-		right: 8px;
 	}
 	.caption a {
 		font-size: 0.8em;

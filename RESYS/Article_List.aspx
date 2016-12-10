@@ -3,133 +3,177 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    
-    <style>
-        .article:hover{
-            background-color:#F5F5F5;
-        }
-    </style>
 
-    <div class="row" style="background-color:#F5F5F5;">
-        <div class="main-body">
-            <div class="wrap">
-                <div class="col-lg-6 content-left col-md-offset-1" style="background-color:#ffffff;">
-                    <%--<asp:Button ID="Button1" runat="server" Text="全部资讯" CssClass="btn btn-default" />
-                <asp:Button ID="Button2" runat="server" Text="综合资讯" CssClass="btn btn-default" />
-                <asp:Button ID="Button3" runat="server" Text="软件更新资讯" CssClass="btn btn-default" />--%>
-                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="newitem">全部资讯</asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton2" runat="server" CssClass="newitem">综合资讯</asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton3" runat="server" CssClass="newitem">软件更新资讯</asp:LinkButton>
-
-                    <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
-                        <asp:View ID="view1" runat="server">
-                            <div class="col-lg-12">
-                                <div class="article">
-                                    <div class="article-title">
-                                        <a class="title" href="#">一个男子拿着报纸在上厕所？</a>
-                                        <p>On Feb 25, 2015 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>104 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-thumbs-up"></span>52</a></p>
-                                    </div>
-                                    <div class="article-text">
-                                        <p>这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容</p>
-                                        <a href="single.html">
-                                            <img src="images/more.png" alt="" /></a>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                                <div class="article">
-                                    <div class="article-title">
-                                        <a class="title" href="#">一个男子拿着报纸在上厕所？</a>
-                                        <p>On Feb 25, 2015 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>104 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-thumbs-up"></span>52</a></p>
-                                    </div>
-                                    <div class="article-text">
-                                        <p>这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容</p>
-                                        <a href="single.html">
-                                            <img src="images/more.png" alt="" /></a>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                                <div class="article">
-                                    <div class="article-title">
-                                        <a class="title" href="#">一个男子拿着报纸在上厕所？</a>
-                                        <p>On Feb 25, 2015 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>104 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-thumbs-up"></span>52</a></p>
-                                    </div>
-                                    <div class="article-text">
-                                        <p>这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容，这是正文内容</p>
-                                        <a href="single.html">
-                                            <img src="images/more.png" alt="" /></a>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </asp:View>
-                        <asp:View ID="view2" runat="server">
-                        </asp:View>
-                        <asp:View ID="view3" runat="server">
-                        </asp:View>
-                    </asp:MultiView>
+    <!-- content starts here -->
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 "></div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 ">
+            <div class="main-body">
+                <div class="main-body-menu">
+                    <ul class="newitem">
+                        <li class="current"><a href="#">全部咨询</a></li>
+                        <li><a href="#">综合资讯</a></li>
+                        <li><a href="#">软件更新</a></li>
+                    </ul>
                 </div>
-
-                <div class="col-md-3 side-bar col-md-offset-1" style="background-color:#ffffff;">
-                    <asp:LinkButton ID="LinkButton4" runat="server" CssClass="newitem">热门综合资讯</asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton5" runat="server" CssClass="newitem">软件更新</asp:LinkButton>
-                    <asp:MultiView ID="MultiView2" runat="server" ActiveViewIndex="0">
-                        <asp:View ID="view4" runat="server">
-                            <div style="padding-left: 8px;">
-                                <div class="popular-post-grid">
-                                    <div class="post-text1">
-                                        <a class="pp-title" href="#">西班牙一帅哥看见了我都称我为天人，如此的帅气,然后从此拜我为师傅！！！</a>
-                                        <p>On Apr 14 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>2 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
-                                    </div>
-                                    <div class="clearfix"></div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                        <div class="decorate-line2"></div>
+                        <div class="news-list">
+                            <div class="news">
+                                <h3><a href="#">锐赛思传播微软开源产品</a></h3>
+                                <div>来源:&nbsp<a href="#">锐赛思</a></div> 
+                                <div>类型:&nbsp<a href="#">产品资讯</a></div> 
+                                <div>发布:&nbsp<a href="#">2016-10-26</a></div>
+                                <div><p>这里是锐赛思关于传播微软开源产品的资讯这里是锐赛思关于传播微软开源产品的资讯
+                                    这里是锐赛思关于传播微软开源产品的资讯这里是锐赛思关于传播微软开源产品的资讯
+                                    这里是锐赛思关于传播微软开源产品的资讯这里是锐赛思关于传播微软开源产品的资讯。</p>
                                 </div>
-                                <div class="popular-post-grid">
-                                    <div class="post-text1">
-                                        <a class="pp-title" href="#">西班牙一帅哥看见了我都称我为天人，如此的帅气,然后从此拜我为师</a>
-                                        <p>On Apr 14 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>2 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="popular-post-grid">
-                                    <div class="post-text1">
-                                        <a class="pp-title" href="#">西班牙一帅哥看见了我都称我为天人，如此的帅气,然后从此拜我为师</a>
-                                        <p>On Apr 14 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>2 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="popular-post-grid">
-                                    <div class="post-text1">
-                                        <a class="pp-title" href="#">西班牙一帅哥看见了我都称我为天人，如此的帅气,然后从此拜我为师</a>
-                                        <p>On Apr 14 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>2 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="popular-post-grid">
-                                    <div class="post-text1">
-                                        <a class="pp-title" href="#">西班牙一帅哥看见了我都称我为天人，如此的帅气,然后从此拜我为师</a>
-                                        <p>On Apr 14 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>2 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
+                                <div class="pull-right"><a href="#">查看全文>></a></div>
                             </div>
-                        </asp:View>
-                        <asp:View ID="view5" runat="server">
-                        </asp:View>
-                        <asp:View ID="view6" runat="server">
-                        </asp:View>
-                    </asp:MultiView>
-                    <div class="side-bar-article text-center visible-lg">
-                        <a href="single.html">
-                            <img src="images/h/h1.jpg" alt="" /></a>
-                        <div class="side-bar-article-title">
-                            <a href="single.html">Contrary to popular belief, Lorem Ipsum is not simply random text</a>
-                        </div>
+                            <div class="clearfix"></div>
+                            <div class="news">
+                                <h3><a href="#">锐赛思和微软公司达成战略合作</a></h3>
+                                <div>来源:&nbsp<a href="#">锐赛思</a></div> 
+                                <div>类型:&nbsp<a href="#">产品资讯</a></div> 
+                                <div>发布:&nbsp<a href="#">2016-10-26</a></div>
+                                <div><p>这里是锐赛思和微软公司达成战略合作的资讯这里是锐赛思和微软公司达成战略合作品的资讯
+                                    这里是锐赛思和微软公司达成战略合作的资讯这里是锐赛思和微软公司达成战略合作的资讯
+                                    这里是锐赛思和微软公司达成战略合作的资讯。</p>
+                                </div>
+                                <div class="pull-right"><a href="#">查看全文>></a></div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="news">
+                                <h3><a href="#">锐赛思传播微软开源产品</a></h3>
+                                <div>来源:&nbsp<a href="#">锐赛思</a></div> 
+                                <div>类型:&nbsp<a href="#">产品资讯</a></div> 
+                                <div>发布:&nbsp<a href="#">2016-10-26</a></div>
+                                <div><p>这里是锐赛思关于传播微软开源产品的资讯这里是锐赛思关于传播微软开源产品的资讯
+                                    这里是锐赛思关于传播微软开源产品的资讯这里是锐赛思关于传播微软开源产品的资讯
+                                    这里是锐赛思关于传播微软开源产品的资讯这里是锐赛思关于传播微软开源产品的资讯。</p>
+                                </div>
+                                <div class="pull-right"><a href="#">查看全文>></a></div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="news">
+                                <h3><a href="#">锐赛思和微软公司达成战略合作</a></h3>
+                                <div>来源:&nbsp<a href="#">锐赛思</a></div> 
+                                <div>类型:&nbsp<a href="#">产品资讯</a></div> 
+                                <div>发布:&nbsp<a href="#">2016-10-26</a></div>
+                                <div><p>这里是锐赛思和微软公司达成战略合作的资讯这里是锐赛思和微软公司达成战略合作品的资讯
+                                    这里是锐赛思和微软公司达成战略合作的资讯这里是锐赛思和微软公司达成战略合作的资讯
+                                    这里是锐赛思和微软公司达成战略合作的资讯。</p>
+                                </div>
+                                <div class="pull-right"><a href="#">查看全文>></a></div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="news">
+                                <h3><a href="#">锐赛思传播微软开源产品</a></h3>
+                                <div>来源:&nbsp<a href="#">锐赛思</a></div> 
+                                <div>类型:&nbsp<a href="#">产品资讯</a></div> 
+                                <div>发布:&nbsp<a href="#">2016-10-26</a></div>
+                                <div><p>这里是锐赛思关于传播微软开源产品的资讯这里是锐赛思关于传播微软开源产品的资讯
+                                    这里是锐赛思关于传播微软开源产品的资讯这里是锐赛思关于传播微软开源产品的资讯
+                                    这里是锐赛思关于传播微软开源产品的资讯这里是锐赛思关于传播微软开源产品的资讯。</p>
+                                </div>
+                                <div class="pull-right"><a href="#">查看全文>></a></div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="news">
+                                <h3><a href="#">锐赛思和微软公司达成战略合作</a></h3>
+                                <div>来源:&nbsp<a href="#">锐赛思</a></div> 
+                                <div>类型:&nbsp<a href="#">产品资讯</a></div> 
+                                <div>发布:&nbsp<a href="#">2016-10-26</a></div>
+                                <div><p>这里是锐赛思和微软公司达成战略合作的资讯这里是锐赛思和微软公司达成战略合作品的资讯
+                                    这里是锐赛思和微软公司达成战略合作的资讯这里是锐赛思和微软公司达成战略合作的资讯
+                                    这里是锐赛思和微软公司达成战略合作的资讯。</p>
+                                </div>
+                                <div class="pull-right"><a href="#">查看全文>></a></div>
+                            </div>
+                        </div> 
                         <div class="clearfix"></div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md 4 col-sm-2 col-xs-2 "></div>
+                            <div class="col-lg-5 col-md 5 col-sm-8 col-xs-8 ">
+                                <div class="main-body-footer">
+                                    <ul class="pagination">
+                                        <li class="disabled"><a href="#">&laquo;</a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">...</a></li>
+                                        <li><a href="#">&raquo;</a></li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            <div class="col-lg-3 col-md 3 col-sm-2 col-xs-2 "></div>
+                        </div>                     
                     </div>
                 </div>
-                <div class="col-md-1"></div>
             </div>
         </div>
-        <div class="clearfix"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-10 ">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 ">
+                    <div class="hotnews">
+                        <div class="headline"><a href="#"><h3>热门资讯</h3></a></div>
+                        <div class="decorate-line3"></div>
+                        <div class="hotnews-content">
+                            <b class="caret"></b>
+                            <div><a href="#">锐赛思和微软达成战略合作</a></div>
+                        </div>
+                        <div class="hotnews-content">
+                            <b class="caret"></b>
+                            <div><a href="#">锐赛思传播开源产品</a></div>
+                        </div>
+                        <div class="hotnews-content">
+                            <b class="caret"></b>
+                            <div><a href="#">锐赛思和微软达成战略合作</a></div>
+                        </div>
+                        <div class="hotnews-content">
+                            <b class="caret"></b>
+                            <div><a href="#">锐赛思传播开源产品</a></div>
+                        </div>
+                        <div class="hotnews-content">
+                            <b class="caret"></b>
+                            <div><a href="#">锐赛思和微软达成战略合作</a></div>
+                        </div>
+                        <div class="hotnews-content">
+                            <b class="caret"></b>
+                            <div><a href="#">锐赛思传播开源产品</a></div>
+                        </div>
+                        <div class="hotnews-content">
+                            <b class="caret"></b>
+                            <div><a href="#">锐赛思和微软达成战略合作</a></div>
+                        </div>
+                        <div class="button"><a href="#" class="btn btn-warning">浏览更多</a></div>
+                    </div>
+                    <div class="companynews">
+                        <div class="headline"><a href="#"><h3>行业资讯</h3></a></div>
+                        <div class="decorate-line3"></div>
+                    </div>
+                    <div class="new1">
+                        <img src="images/pic1.jpg" />
+                        <div>这里是行业资讯这里是行业资讯这里是行业资讯。</div>
+                        <div class="time">2016-10-26</div>
+                    </div>
+                    <div class="new1">
+                        <img src="images/pic1.jpg" />
+                        <div>这里是行业资讯这里是行业资讯这里是行业资讯。</div>
+                        <div class="time">2016-10-26</div>
+                    </div>
+                    <div class="new1">
+                        <img src="images/pic1.jpg" />
+                        <div>这里是行业资讯这里是行业资讯这里行业资讯。</div>
+                        <div class="time">2016-10-26</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 "></div>
     </div>
 </asp:Content>
 

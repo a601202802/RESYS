@@ -10,7 +10,7 @@
                 <h2>消息通知</h2>
             </div>
             <div class="marquee">
-                <div class="marquee1"><a class="breaking" href="#">>>这里sd提示重要消息1：微信预约系统正式上线啦！恭喜恭喜</a></div>
+                <div class="marquee1"><a class="breaking" href="#">>>这里sd提示重要消息1：微信预约系统正式上sdf线啦！恭喜恭喜</a></div>
                 <div class="marquee1"><a class="breaking" href="#">>>这里提示重要消息2：全媒体平台正式上线啦，恭喜恭喜11</a></div>
                 <div class="marquee1"><a class="breaking" href="#">>>这里提示重要消息3：全媒体平台正式上线啦，恭喜恭喜22</a></div>
                 <div class="marquee1"><a class="breaking" href="#">>>这里提示重要消息4：全媒体平台正式上线啦，恭喜恭喜33</a></div>
